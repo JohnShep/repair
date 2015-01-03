@@ -93,12 +93,23 @@
 		<div class = "col-md-4"><center>
 			<img class = "img-circle" src = "" style = "width = 135px; height: 135px" />
 			<h2>Got Broken Devices?</h2>
-			<p>JTS Technology Services can help with that! Just contact JT at his mobile or email, or fill out this form now! </p>
+			<p>JTS Technology Services can help with that! <br/>Just contact JT at his mobile or email, or fill out this form now to send him an email! </p>
 
 			<!-- email form powered by form spree below -->
+			<!-- This currently worked. In the future we can make more complicated forms
+				 by using a generic HTML5 form, then doing a POST to formspree.io -->
 			<form method="POST" action="////formspree.io/jtsheppleitech@gmail.com">
-				    <input type="email" name="_replyto" placeholder="Your email" /> <br/>
-				    <textarea name="message" rows="5"></textarea>
+
+					<!-- Customer enters their email & their message here. -->
+				    <input type="email" name="_replyto" placeholder="Your email address" /> <br/>
+				    <textarea name="message" rows="6" placeholder="Please enter your message here."></textarea>
+				    <br/>
+
+				    <!-- Future plan: add a custom "Thanks for your email! HTML page for customers to see" -->
+				    <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+
+				    <!-- Customized subject line. The _gotcha is to fool spammers. -->
+				    <input type="hidden" name="_subject" value="**You have a new message from a future customer!!**" />
 				    <input type="text" name="_gotcha" style="display:none">
     				<button type="submit">Send</button>
 			</form>
@@ -132,7 +143,7 @@
 			<div class = "col-md-12"><center><h1>Jason Downing</h1></center></div>
 			<div class = "col-md-12"><center><h4>Expert GitHubber for JTS Technology Services</h4></center></div>
 			<div class = "col-md-12">
-				<p style = "text-align: justify"><strong>Jason Downing</strong> is an undergraduate student at University of Massachusetts, Lowel. You may contact him at: <strong>cell number hurr?</strong> or <a href = "mailto:jason_downing@student.uml.edu">jason_downing@student.uml.edu</a>. </p>
+				<p style = "text-align: justify"><strong>Jason Downing</strong> is an undergraduate Computer Science student at University of Massachusetts, Lowell. You may contact him at: <a href = "mailto:jason_downing@student.uml.edu">jason_downingstudent.uml.edu</a>. </p>
 			</div>
 		</div>
 		<div class = "col-md-4">
