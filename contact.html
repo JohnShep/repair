@@ -2,12 +2,23 @@
 <html lang = "en-US">
 <head>
 	<meta charset = "utf-8">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 	<meta http-equiv = "X-UA-Compatible" content = "IE-edge">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
-	<title>JTS Technology Services: Contact Us</title>
+	<title>JTS Technology Services</title>
 	<link href = "css/bootstrap.css" rel = "stylesheet">
 	<link href = "main.css" rel = "stylesheet">
+
+	<!-- Include all compiled plugins (below), or include individual files as needed. -->
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/googlemaps.js"></script>
+
 </head>
 <body>
 	<!-- This is the <NAVIGATION_BAR>! -->
@@ -38,11 +49,13 @@
 		</nav>
 	</div>
 
-	<!-- FORM AND MAP -->
-	<div class = "container-fluid">
-		<div class = "col-xs-6">
-			<h3>Fill-out your request here! </h3>
-				<!-- BEGINNING OF THE FORM -->
+	<!-- These are <EXTRA_INFO> blurbs. -->
+	<div class = "row">
+		<!-- Form container -->
+		<div class = "col-md-6"><center>
+			<h2>Got Broken Devices?</h2>
+			<p>JTS Technology Services can help with that! <br/>Just contact JT at his mobile or email, or fill out this form now to send him an email! </p></center>
+			<!-- BEGINNING OF THE FORM -->
 				<form class = "form-horizontal" role = "form">
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "name">Name: </label>
@@ -89,12 +102,43 @@
 						</div>
 					</div>
 				</form>
-		</div>
-		<div class = "col-xs-6">
-			<p align = "justify">Map should go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-		</div>
-		</div>
-	</div>
+
+				<hr class = "featurette-divider" />
+			<!-- email form powered by form spree below -->
+			<!-- This currently worked. In the future we can make more complicated forms
+				 by using a generic HTML5 form, then doing a POST to formspree.io --><center>
+			<form method="POST" action="////formspree.io/jtsheppleitech@gmail.com">
+
+					<!-- Customer enters their email & their message here. -->
+				    <input type="email" name="_replyto" placeholder="Your email address" /> <br/>
+				    <textarea name="message" rows="6" placeholder="Please enter your message here."></textarea>
+				    <br/>
+
+				    <!-- Future plan: add a custom "Thanks for your email! HTML page for customers to see" -->
+				    <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+
+				    <!-- Customized subject line. The _gotcha is to fool spammers. -->
+				    <input type="hidden" name="_subject" value="**You have a new message from a future customer!!**" />
+				    <input type="text" name="_gotcha" style="display:none">
+    				<button type="submit">Send</button>
+			</form>
+		</center></div>
+
+		<!-- Map container -->
+		<div class = "col-md-6"><center><br />
+			<div id="map-canvas" style="width: 100%; height: 400px"></div>
+			<p>I serve the areas surrounding Bolton, MA and Lowell, MA.</p>
+			<p>If you are outside this area, I can still meet you if you are</p>
+			<p>willing to drive to the areas listed.</p>
+		</center></div>
+
+	</div> <!-- End of <EXTRA_INFO> blubs! -->
+
+	<hr class = "featurette-divider">
+
+	<script type="text/javascript">
+		initialize_map();
+	</script>
 
 	<!-- THIS IS THE FOOTER! -->
 	<footer class = "footer">
@@ -103,27 +147,5 @@
 		</div>
 	</footer>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
-	<script src = "https://ajax.googleapis.com/ajas/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed. -->
-	<script src = "js/bootstrap.js"></script>
 </body>
 </html>
-
-<!-- email form powered by form spree below -
-- This currently worked. In the future we can make more complicated forms
-by using a generic HTML5 form, then doing a POST to formspree.io -
-<form method="POST" action="////formspree.io/jtsheppleitech@gmail.com">
-
-- Customer enters their email & their message here. -
-				<input type="email" name="_replyto" placeholder="Your email address" /> <br/>
-				<textarea name="message" rows="6" placeholder="Please enter your message here."></textarea>
-				<br/>
-
-- Future plan: add a custom "Thanks for your email! HTML page for customers to see" -
-				- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -
-				- Customized subject line. The _gotcha is to fool spammers. -
-				<input type="hidden" name="_subject" value="**You have a new message from a future customer!!**" />
-				<input type="text" name="_gotcha" style="display:none">
-    			<button type="submit">Send</button>
-			</form>->

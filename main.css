@@ -21,12 +21,12 @@ body {
 }
 
 .footer {
-	position: fixed;
-	background-color: #F6F6F6;
+	position: relative;
+	background-color: #FFFFFF;
 	bottom: 0px;
 	height: 25px;
 	margin-bottom: 7.75px;
-	padding-top: 7.75px;
+	padding-top: 30px;
 	width: 100%;
 }
 
