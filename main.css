@@ -22,11 +22,11 @@ body {
 
 .footer {
 	position: fixed;
-	background-color: #F5F5F5;
+	background-color: #F6F6F6;
 	bottom: 0px;
-	height: 35px;
+	height: 25px;
 	margin-bottom: 7.75px;
-	padding-top: 15px;
+	padding-top: 7.75px;
 	width: 100%;
 }
 
@@ -35,5 +35,5 @@ body {
 }
 
 body > .row {
-	margin: 15px;
+	margin: 10px;
 }
