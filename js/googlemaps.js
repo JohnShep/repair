@@ -16,10 +16,11 @@ function initialize_map() {
     center: new google.maps.LatLng(42.548928, -71.470391),
     mapTypeControl: false,
     navigationControl: false,
-    draggable: false,
-    zoomControl: false,
-    scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.HYBRID
+    draggable: true,
+    zoomControl: true,
+    scrollwheel: true,
+    disableDefaultUI: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

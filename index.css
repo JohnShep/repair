@@ -1,15 +1,7 @@
-.navbar-wrapper {
-	position: absolute;
-	/* <----- PADDING -----> */
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 20;
-}
-
+/* FOR THE CAROUSEL: */
 .carousel {
-	height: 490px;
-	margin-top: 45px;
+	height: 485px;
+	margin-bottom: 0px;
 }
 
 .carousel-caption {
@@ -17,8 +9,8 @@
 }
 
 .carousel .item {
-	background-color: #444444;
-	height: 490px;
+	background-color: #777;
+	height: 485px;
 }
 
 .carousel-inner > .item > img {
@@ -26,10 +18,14 @@
 	/* <----- PADDING -----> */
 	top: 0;
 	left: 0;
-	height: 490px;
+	height: 485px;
 	min-width: 100%;
 }
 
-.featurette-divider {
-	margin: 50px 0;
+@media {
+	.carousel-caption p {
+		margin-bottom: 15px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
 }
