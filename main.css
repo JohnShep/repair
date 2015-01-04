@@ -23,13 +23,17 @@ body {
 .footer {
 	position: fixed;
 	background-color: #F5F5F5;
-	bottom: 0;
+	bottom: 0px;
 	height: 35px;
+	margin-bottom: 7.75px;
 	padding-top: 15px;
-	position: absolute;
 	width: 100%;
 }
 
 body {
 	padding-top: 70px;
+}
+
+body > .row {
+	margin: 15px;
 }
