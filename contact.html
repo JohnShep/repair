@@ -51,16 +51,62 @@
 
 	<!-- These are <EXTRA_INFO> blurbs. -->
 	<div class = "row">
-
 		<!-- Form container -->
 		<div class = "col-md-6"><center>
-			<img class = "img-circle" src = "" style = "width = 135px; height: 135px" />
 			<h2>Got Broken Devices?</h2>
-			<p>JTS Technology Services can help with that! <br/>Just contact JT at his mobile or email, or fill out this form now to send him an email! </p>
+			<p>JTS Technology Services can help with that! <br/>Just contact JT at his mobile or email, or fill out this form now to send him an email! </p></center>
+			<!-- BEGINNING OF THE FORM -->
+				<form class = "form-horizontal" role = "form">
+					<div class = "form-group">
+						<label class = "control-label col-sm-2" for = "name">Name: </label>
+						<div class = "col-sm-6"><input type = "name" class = "form-control" id = "name" placeholder = "Enter your name. "></div>
+					</div>
+					<div class = "form-group">
+						<label class = "control-label col-sm-2" for = "phone_num">Phone Number: </label>
+						<div class = "col-sm-6"><input type = "phone_num" class = "form-control" id = "phone_num" placeholder = "Enter your phone number. "></div>
+					</div>
+					<div class = "form-group">
+						<label class = "control-label col-sm-2" for = "device">Device: </label>
+						<div class = "col-sm-6"><input type = "device" class = "form-control" id = "device" placeholder = "Enter your device here."></div>
+					</div>
+					<div class = "form-group">
+						<label class = "control-label col-sm-2" for = "location">Location: </label>
+						<div class = "col-sm-6">
+							<p>Please choose your device from the following: </p>
+							<div class = "radio">
+								<label><input type = "radio" name = "optionsRadio" id = "optionsRadios1" value = "option1" checked>iPod</label>
+							</div>
+							<div class = "radio">
+								<label><input type = "radio" name = "optionsRadio" id = "optionsRadios2" value = "option2" checked>iPad</label>
+							</div>
+							<div class = "radio">
+								<label><input type = "radio" name = "optionsRadio" id = "optionsRadios3" value = "option3" checked>iPhone</label>
+							</div>
+							<div class = "radio">
+								<label><input type = "radio" name = "optionsRadio" id = "optionsRadios4" value = "option4" checked>Other</label>
+							</div>
+							<div class = "col-sm-12">
+								<input type = "text" class = "form-control" placeholder = "If you chose 'other', please enter your device here.">
+							</div>
+							<!--<input type = "location" class = "form-control" id = "location" placeholder = "Enter your location. ">-->
+						</div>
+					</div>
+					<div class = "col-sm-offset-2 col-sm-10"><p><strong>Note:</strong> Most repairs can be done in 30 minutes on the spot! </p></div>
+					<div class = "form-group">
+						<label class = "control-label col-sm-2" for = "message">Message: </label>
+						<div class = "col-sm-6"><input type = "message" class = "form-control" id = "message" placeholder = "Write a message here. "></div>
+					</div>
+					<div class = "form-group">
+						<div class = "col-sm-offset-2 col-sm-6">
+							<button type = "submit" class = "btn btn-default">Submit </button>
+						</div>
+					</div>
+				</form>
 
+				<hr class = "featurette-divider" />
 			<!-- email form powered by form spree below -->
 			<!-- This currently worked. In the future we can make more complicated forms
-				 by using a generic HTML5 form, then doing a POST to formspree.io -->
+				 by using a generic HTML5 form, then doing a POST to formspree.io --><center>
 			<form method="POST" action="////formspree.io/jtsheppleitech@gmail.com">
 
 					<!-- Customer enters their email & their message here. -->
@@ -79,8 +125,8 @@
 		</center></div>
 
 		<!-- Map container -->
-		<div class = "col-md-6"><center>
-			<div id="map-canvas" style="width: 400px; height: 400px"></div>
+		<div class = "col-md-6"><center><br />
+			<div id="map-canvas" style="width: 100%; height: 400px"></div>
 			<p>I serve the areas surrounding Bolton, MA and Lowell, MA.</p>
 			<p>If you are outside this area, I can still meet you if you are</p>
 			<p>willing to drive to the areas listed.</p>
