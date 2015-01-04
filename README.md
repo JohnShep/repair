@@ -5,8 +5,8 @@ Source code for JT's awesome website.
 
 JT's awesome website is located at the following address:
 
-http://JohnShep.github.io/repair.index.html
+http://JohnShep.github.io/repair/index.html
 
 Dev site:
 
-http://jasond94.github.io/repair.index.html
+http://jasond94.github.io/repair/index.html
