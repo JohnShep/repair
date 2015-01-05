@@ -94,7 +94,7 @@
 					<div class = "col-sm-offset-2 col-sm-10"><p><strong>Note:</strong> Most repairs can be done in 30 minutes on the spot! </p></div>
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "message">Message: </label>
-						<div class = "col-sm-6"><input type = "text" rows = "5" class = "form-control" name = "message" value = "<?php echo $location;?>" placeholder = "Write a message here. "></div>
+						<div class = "col-sm-6"><textarea rows = "5" class = "form-control" name = "message" placeholder = "Write a message here. "><?php echo $location;?></textarea></div>
 					</div>
 					<div class = "form-group">
 						<div class = "col-sm-offset-2 col-sm-6">
