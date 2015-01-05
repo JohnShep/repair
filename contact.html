@@ -56,14 +56,14 @@
 			<h2>Got Broken Devices?</h2>
 			<p>JTS Technology Services can help with that! <br/>Just contact JT at his mobile or email, or fill out this form now to send him an email! </p></center>
 			<!-- BEGINNING OF THE FORM -->
-				<form action = "broken_devices.php" class = "form-horizontal" role = "form">
+				<form class = "form-horizontal" role = "form">
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "name">Name: </label>
-						<div class = "col-sm-6"><input type = "text" class = "form-control" name = "name" value = "<?php echo $name;?>" placeholder = "Enter your name. "></div>
+						<div class = "col-sm-6"><input type = "name" class = "form-control" id = "name" placeholder = "Enter your name. "></div>
 					</div>
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "phone_num">Phone Number: </label>
-						<div class = "col-sm-6"><input type = "text" class = "form-control" name = "phone_num" value = "<?php echo $phone_num;?>" placeholder = "Enter your phone number. "></div>
+						<div class = "col-sm-6"><input type = "phone_num" class = "form-control" id = "phone_num" placeholder = "Enter your phone number. "></div>
 					</div>
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "location">Device: </label>
@@ -81,20 +81,16 @@
 							<div class = "radio">
 								<label><input type = "radio" name = "optionsRadio" id = "optionsRadios4" value = "option4" checked>Other</label>
 							</div>
-							<div class = "col-sm-12"><br />
+							<div class = "col-sm-12">
 								<input type = "text" class = "form-control" placeholder = "If you chose 'other', please enter your device here.">
 							</div>
 							<!--<input type = "location" class = "form-control" id = "location" placeholder = "Enter your location. ">-->
 						</div>
 					</div>
-					<div class = "form-group">
-						<label class = "control-label col-sm-2" for = "device">Location: </label>
-						<div class = "col-sm-6"><input type = "text" class = "form-control" name = "location" value = "<?php echo $location;?>" placeholder = "Enter your location here."></div>
-					</div>
 					<div class = "col-sm-offset-2 col-sm-10"><p><strong>Note:</strong> Most repairs can be done in 30 minutes on the spot! </p></div>
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "message">Message: </label>
-						<div class = "col-sm-6"><textarea rows = "5" class = "form-control" name = "message" placeholder = "Write a message here. "><?php echo $location;?></textarea></div>
+						<div class = "col-sm-6"><input type = "message" class = "form-control" id = "message" placeholder = "Write a message here. "></div>
 					</div>
 					<div class = "form-group">
 						<div class = "col-sm-offset-2 col-sm-6">
@@ -127,9 +123,8 @@
 		<!-- Map container -->
 		<div class = "col-md-6"><center><br />
 			<div id="map-canvas" style="width: 100%; height: 400px"></div>
-			<p>I serve the areas surrounding Bolton, MA and Lowell, MA.</p>
-			<p>If you are outside this area, I can still meet you if you are</p>
-			<p>willing to drive to the areas listed.</p>
+			<br /><p>I serve the areas surrounding Bolton, MA and Lowell, MA.</p>
+			<p>If you are outside this area, I can still meet you if you are willing to drive to the areas listed.</p>
 		</center></div>
 
 	</div> <!-- End of <EXTRA_INFO> blubs! -->
