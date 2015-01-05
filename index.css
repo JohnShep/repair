@@ -22,7 +22,7 @@ body > .row {
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 20s;
+	z-index: 20;
 }
 
 /* FOR THE CAROUSEL: */
@@ -53,7 +53,7 @@ body > .row {
 @media {
 	.carousel-caption p {
 		margin-bottom: 15px;
-		font-size: 21px;
+		font-size: 16px;
 		line-height: 1.4;
 	}
 }
