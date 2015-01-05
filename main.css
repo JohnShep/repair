@@ -33,7 +33,7 @@ body {
 	padding-top: 70px;
 }
 
-body > div > .row {
+body > .row {
 	margin: 10px;
 }
 
