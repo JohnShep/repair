@@ -35,7 +35,7 @@ function post_data() {
     data: {
       "key": "PUZvXW1BZFD6SZHSBpVH7Q",
       "message": {
-        "from_email": "email_message["email"]", //email_message["email"]
+        "from_email": email_message["email"], //email_message["email"]
         "to": [
         {
           "email": "jtsheppleitech@gmail.com", // jtsheppleitech@gmail.com
