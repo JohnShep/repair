@@ -7,6 +7,7 @@ JT's awesome website is located at the following address:
 
 http://JohnShep.github.io/repair/index.html
 
-Dev site:
+Dev site(s):
 
 http://jasond94.github.io/repair/index.html
+http://svnaptic.github.io/repair/index.html
