@@ -1,8 +1,25 @@
+$.fn.serializeObject = function()
+{
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+    if (o[this.name] !== undefined) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+    } else {
+      o[this.name] = this.value || '';
+    }
+  });
+  return o;
+};
+
 function post_data() {
 
   var email_message;
 
-  email_message = JSON.stringify($("#post_data_form").serializeArray());
+  email_message = JSON.stringify($("#post_data_form").serializeObject());
 
   console.log(email_message);
 
