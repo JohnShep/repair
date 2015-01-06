@@ -29,40 +29,44 @@ function post_data() {
   + "<br/>Customer's location: " + email_message["location"] + "<br/>Customer's message is as follows: <br/>" +
   email_message["message"] + "<br/><br/>SENT VIA JT'S AWESOME WEBSITE";
 
-  // $.ajax({
-  //   type: 'POST',
-  //   url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-  //   data: {
-  //     "key": "PUZvXW1BZFD6SZHSBpVH7Q",
-  //     "message": {
-  //       "from_email": email_message["email"],
-  //       "to": [
-  //       {
-  //         "email": "jdown1994@gmail.com", // jtsheppleitech@gmail.com
-  //         "name": "JT Shepple",
-  //         "type": "to"
-  //       },
-  //       ],
-  //       "autotext": "true",
-  //       "subject": "You have a new email from a customer!",
-  //       "html": the_message
-  //     }
-  //   }
-  // }).done(function(response) {
-    // console.log(response);
-    //
-    // if(response[0]["status"] == "sent")
-    // {
+  $.ajax({
+    type: 'POST',
+    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+    data: {
+      "key": "PUZvXW1BZFD6SZHSBpVH7Q",
+      "message": {
+        "from_email": "email_message["email"]", //email_message["email"]
+        "to": [
+        {
+          "email": "jtsheppleitech@gmail.com", // jtsheppleitech@gmail.com
+          "name": "JT Shepple",                // jdown1994@gmail.com
+          "type": "to"
+        }
+        ],
+        "autotext": "true",
+        "subject": "You have a new email from a customer!",
+        "html": the_message
+      }
+    }
+  }).done(function(response) {
+    console.log(response);
+
+    if(response[0]["status"] == "sent")
+    {
       console.log("Success in sending the email.");
       document.email_form.reset();
 
       $("#after_submit").html("Thanks for emailing JT!<br/>JT will get back to you as soon as possible.");
 
       $( "#dialog" ).dialog({modal:true});
-  //   }
-  //   else{
-  //     console.log("Failure to send email.");
-  //   }
-  //
-  // });
+    }
+    else{
+      console.log("Failure to send email.");
+
+      $("#after_submit").html("Sorry, your email did not go though.<br/> Make sure to fill out all the required fields, and provide a valid email address.");
+
+      $( "#dialog-fail" ).dialog({modal:true});
+    }
+
+  });
 }
