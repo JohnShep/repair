@@ -19,9 +19,15 @@ function post_data() {
 
   var email_message;
 
-  email_message = JSON.stringify($("#post_data_form").serializeObject());
+  email_message = $("#post_data_form").serializeObject();
 
   console.log(email_message);
+
+  var the_message;
+  the_message = "Email from " + email_message["name"] + "<br/>Phone number: " + email_message["phone_number"]
+  + "<br/>Customer's device: " + email_message["option"] + "<br/>If other: " + email_message["other_device"]
+  + "<br/>Customer's location: " + email_message["location"] + "<br/>Customer's message is as follows: <br/>" +
+  email_message["message"] + "<br/><br/>SENT VIA JT'S AWESOME WEBSITE";
 
   // $.ajax({
   //   type: 'POST',
@@ -29,20 +35,34 @@ function post_data() {
   //   data: {
   //     "key": "PUZvXW1BZFD6SZHSBpVH7Q",
   //     "message": {
-  //       "from_email": "jdown1994@gmail.com", //"jtsheppleitech@gmail.com",
+  //       "from_email": email_message["email"],
   //       "to": [
   //       {
-  //         "email": "jdown1994@gmail.com", //"jtsheppleitech@gmail.com",
+  //         "email": "jdown1994@gmail.com", // jtsheppleitech@gmail.com
   //         "name": "JT Shepple",
   //         "type": "to"
   //       },
   //       ],
   //       "autotext": "true",
   //       "subject": "You have a new email from a customer!",
-  //       "html":
+  //       "html": the_message
   //     }
   //   }
   // }).done(function(response) {
-  //   console.log(response);
+    // console.log(response);
+    //
+    // if(response[0]["status"] == "sent")
+    // {
+      console.log("Success in sending the email.");
+      document.email_form.reset();
+
+      $("#after_submit").html("Thanks for emailing JT!<br/>JT will get back to you as soon as possible.");
+
+      $( "#dialog" ).dialog({modal:true});
+  //   }
+  //   else{
+  //     console.log("Failure to send email.");
+  //   }
+  //
   // });
 }

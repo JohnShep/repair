@@ -20,6 +20,11 @@
 	<script src="js/googlemaps.js"></script>
 	<script src="js/email.js"></script>
 
+	<!-- CALL THIS AFTER DO NOT MOVE THIS MUST BE CALLED **AFTER** BOOTSTRAP -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<link href = "css/contact.css" rel = "stylesheet">
+
 </head>
 <body>
 	<!-- This is the <NAVIGATION_BAR>! -->
@@ -58,7 +63,7 @@
 			<p>JTS Technology Services can help with that! <br/>
 				Just contact JT at his mobile or email, or fill out this form now to send him an email! </p></center>
 			<!-- BEGINNING OF THE FORM -->
-				<form id = "post_data_form" class = "form-horizontal" role = "form" action="javascript:post_data()">
+				<form name = "email_form" id = "post_data_form" class = "form-horizontal" role = "form" action="javascript:post_data()">
 
 					<div class = "form-group">
 						<label class = "control-label col-sm-2" for = "name">Name: </label>
@@ -133,6 +138,9 @@
 					</div>
 
 				</form>
+
+				<center><div id="after_submit" class = "col-sm-offset-2 col-sm-6">Something goes here after submitting.</div></center>
+
 		</center></div>
 
 		<!-- Map container -->
@@ -162,5 +170,11 @@
 		</div>
 	</footer>
 
+	<div id="dialog" title="Thanks for the email!" style="none">
+		<p><center>Thanks for emailing JT!</center>He will get back to you as soon as possible!
+		In the meantime, feel free to press the 'x' button to close this window.</p>
+	</div>
+
 </body>
+
 </html>
