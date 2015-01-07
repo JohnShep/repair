@@ -2,19 +2,23 @@
 <html lang = "en-US">
 <head>
 	<meta charset = "utf-8">
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
 	<meta http-equiv = "X-UA-Compatible" content = "IE-edge">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
 	<title>JTS Technology Services</title>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed. -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/services.js"></script>
+	<!-- All external stylesheets are below. -->
 	<link href = "css/bootstrap.css" rel = "stylesheet">
-	<link href = "main.css" rel = "stylesheet">
+	<link href = "css/main.css" rel = "stylesheet">
+	<link href = "css/services.css" rel = "stylesheet">
 </head>
-<body>
+<body onload = "initTabs()">
 	<!-- This is the <NAVIGATION_BAR>! -->
 	<div class = "navbar-wrapper">
 		<nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation">
@@ -43,23 +47,63 @@
 		</nav>
 	</div>
 
-	<!-- SHOP NAVI -->
+	<!-- This is the <SERVICES> sub-navigation. -->
 	<div class = "container">
 		<div class = "masthead">
-			<nav>
-				<ul class = "nav nav-justified">
-					<li class = "active"><a href = "#iphone">iPhone</a></li>
-					<li><a href = "#ipad">iPad</a></li>
-					<li><a href = "#ipod">iPod</a></li>
-					<li><a href = "#other">Other Devices</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class = "jumbotron">
-			<p>items would go here?</p>
+			<ul class = "nav nav-justified" id = "tabs">
+				<li><a href = "#iphone" onclick = "showTabContent()">iPhone</a></li>
+				<li><a href = "#ipad" onclick = "showTabContent()">iPad</a></li>
+				<li><a href = "#ipod" onclick = "showTabContent()">iPod</a></li>
+				<li><a href = "#other" onclick = "showTabContent()">Other Devices</a></li>
+			</ul>
+
+			<div class = "tabContent" id = "iphone">
+				<div class = "row">
+					<div class = "col-md-8">
+						<h2>iPhones</h2>
+						<p>Different generations of iPhones as options should be placed here. </p>
+					</div>
+					<div class = "col-md-4">
+						<p><br /><br />Picture of an iPhone should go here. </p>
+					</div>
+				</div>
+			</div>
+			<div class = "tabContent" id = "ipad">
+				<div class = "row">
+					<div class = "col-md-8">
+						<h2>iPads</h2>
+						<p>Different generations of iPads as options should be placed here. </p>
+					</div>
+					<div class = "col-md-4">
+						<p><br /><br />Picture of an iPad should go here. </p>
+					</div>
+				</div>
+			</div>
+			<div class = "tabContent" id = "ipod">
+				<div class = "row">
+					<div class = "col-md-8">
+						<h2>iPods</h2>
+						<p>Different generations of iPods as options should be placed here. </p>
+					</div>
+					<div class = "col-md-4">
+						<p><br /><br />Picture of an iPod should go here. </p>
+					</div>
+				</div>
+			</div>
+			<div class = "tabContent" id = "other">
+				<div class = "row">
+					<div class = "col-md-8">
+						<h2>Other Devices</h2>
+						<p>Other devices as options should be placed here. </p>
+					</div>
+					<div class = "col-md-4">
+						<p><br /><br />Pictures of these other devices should go here. </p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
+		
 	<!--<center> <img src="img/UnderConstructionPAGE.jpg" style="width:700px;height:474px"/> </center>-->
 
 	<!-- THIS IS THE FOOTER! -->
@@ -68,8 +112,5 @@
 			<center><p class = "text-muted">JTS Technology Services &copy; 2014. All rights reserved. Powered by <a href = "http://www.getbootstrap.com/">Bootstrap</a>. </p></center>
 		</div>
 	</footer>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed. -->
-	<script src = "js/bootstrap.js"></script>
 </body>
 </html>
