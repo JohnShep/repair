@@ -1,24 +1,25 @@
-body {
+html {
+	min-height: 100%;
 	position: relative;
 }
 
-body > .row {
-	margin: 15px;
+body {
+	padding-bottom: 60px;
 }
 
-.footer {
-	position: static;
-	background-color: #FFFFFF;
-	bottom: 0;
-	height: 20px;
-	padding-top: 20px;
-	width: 100%;
+body > .container {
+	padding: 65px 10px 0;
+}
+
+body > .row {
+	margin: 10px;
 }
 
 /* FOR THE CAROUSEL: */
 .carousel {
 	height: 485px;
 	margin-bottom: 0px;
+	top: 0;
 }
 
 .carousel-caption {
@@ -42,7 +43,25 @@ body > .row {
 @media {
 	.carousel-caption p {
 		margin-bottom: 15px;
-		font-size: 21px;
+		font-size: 16px;
 		line-height: 1.4;
 	}
+}
+
+.footer {
+	position: static;
+	background-color: #FFFFFF;
+	bottom: 0;
+	height: 20px;
+	padding-top: 20px;
+	width: 100%;
+}
+
+/* FOR THE NAVBAR: */
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
 }
