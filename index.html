@@ -50,7 +50,7 @@
 	</div>
 
 	<!-- This is the <CAROUSEL>! -->
-	<div id = "m_carousel" class = "carousel slide" data-ride = "carousel">
+	<div id = "m_carousel" class = "carousel slide" data-ride = "carousel" data-interval="false">
 		<!-- These are <INDICATORS>! -->
 		<ol class = "carousel-indicators">
 			<li data-target = "#m_carousel" data-slide-to = "0" class = "active"></li>
@@ -60,11 +60,15 @@
 		<div class = "carousel-inner" role = "listbox">
 			<!-- This is the 1st slide! -->
 			<div class = "item active">
-			<!--<img src = "IMG_URL_HERE.jpg" alt = "first slide">-->
+
+			<!-- Image 1 is within this div. See index.css for details. -->
+			<div id = "img1"> <img src = "img/logo.jpg" alt = "first slide"> </div>
+
 			<div class = "container">
 			<div class = "carousel-caption">
 				<h1>JTS Technology Services</h1>
-				<p>Electronic device repair -- iDevices, tablets, phones. Certified iCracked iTech partner JT has all his repairs backed by iCracked's 99-Year Nationwide Warranty. </p>
+				<p>Electronic device repair -- iDevices, tablets, phones.
+					 Certified iCracked iTech partner JT has all his repairs backed by iCracked's 99-Year Nationwide Warranty. </p>
 				<p><a class = "btn btn-lg btn-primary" href = "contact.html" role = "button">Let's get started!</a></p>
 			</div>
 			</div>
@@ -72,7 +76,12 @@
 
 			<!-- This is the 2nd slide! -->
 			<div class = "item">
-			<!--<img src = "IMG_URL_HERE.jpg" alt = "second slide">-->
+
+			<!-- The three device images are in these divs. See index.css for details. -->
+			<img src = "img/iphone.png"     style = "width:100px;height:100px">
+			<!-- <img align = "center" src = "img/ipad.png"       style = "max-width:100px;max-height:100%">
+			<img align = "right"  src = "img/ipod_touch.png" style = "max-width:100px;max-height:100%"> -->
+
 			<div class = "container">
 			<div class = "carousel-caption">
 				<h1>We're on the news! </h1>
