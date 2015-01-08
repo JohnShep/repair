@@ -33,7 +33,7 @@ function post_data() {
     type: 'POST',
     url: 'https://mandrillapp.com/api/1.0/messages/send.json',
     data: {
-      "key": "PUZvXW1BZFD6SZHSBpVH7Q",
+      "key": "qoDjPi3vtF0p8F01At5muw",
       "message": {
         "from_email": email_message["email"], //email_message["email"]
         "to": [
