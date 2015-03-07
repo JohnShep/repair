@@ -1,5 +1,6 @@
 var tabLinks = new Array();
 var contentDivs = new Array();
+$(initTabs);
 
 function initTabs(){
 	var tabLinksList = document.getElementById('tabs').childNodes;
