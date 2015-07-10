@@ -33,7 +33,7 @@ body > .row {
 }
 
 .carousel-inner > .item > img {
-
+  margin: 0 auto;
 }
 
 @media {
@@ -64,14 +64,13 @@ body > .row {
 
 /* These are for the carousel images */
 #img1{
-	position: fixed;
-	top: 60px;
-	right: 381px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #img2{
-	top: 60px;
-	right: 1524px;
+  margin: auto;
+  width: 100%;
 }
 
 #image2{
