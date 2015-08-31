@@ -5,13 +5,14 @@
 	<meta http-equiv = "X-UA-Compatible" content = "IE-edge">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
-	<title>JTS Technology Services</title>
+	<title>Services</title>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
-	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src = "js/jquery-1.11.2.min.js"></script>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
 	<!-- Include all compiled plugins (below), or include individual files as needed. -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
 	<script src = "js/bootstrap.js"></script>
 	<script src = "js/services.js"></script>
 
@@ -20,11 +21,14 @@
 	<link href = "css/main.css" rel = "stylesheet">
 	<link href = "css/services.css" rel = "stylesheet">
 </head>
+
 <body onload = "initTabs()">
+
 	<!-- This is the <NAVIGATION_BAR>! -->
 	<div class = "navbar-wrapper">
 		<nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation">
 			<div class = "container-fluid">
+			
 			<!-- Brand and toggle get grouped together for better mobile display. -->
 			<div class = "navbar-header">
 				<button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar">
@@ -35,6 +39,7 @@
 				</button>
 				<a class = "navbar-brand" href = "index.html">JTS Technology Services</a>
 			</div>
+			
 			<!-- Collect the nav links, forms, and other content for toggling. -->
 			<div id = "navbar" class = "navbar-collapse collapse">
 				<ul class = "nav navbar-nav navbar-right">
@@ -42,8 +47,6 @@
 					<li><a href = "about.html">About</a></li>
 					<li><a href = "contact.html">Contact</a></li>
 					<li class = "active"><a href = "services.html">Services</a></li>
-					<li><a href = "shop.html">Shop</a></li>
-					<li><a href = "news.html">News</a></li>
 				</ul>
 			</div>
 			</div>
@@ -60,7 +63,8 @@
 				<li><a href = "#other" onclick = "showTabContent()">Other Devices</a></li>
 			</ul>
 
-			<div class = "tabContent" id = "iphone">
+            <!-- iPhone tab -->
+			<div id = "iphone">
 				<div class = "row">
 					<div class = "col-md-8">
 						<h2>iPhones</h2>
@@ -78,7 +82,9 @@
 					</div>
 				</div>
 			</div>
-			<div class = "tabContent" id = "ipad">
+			
+			<!-- iPad tab -->
+			<div id = "ipad">
 				<div class = "row">
 					<div class = "col-md-8">
 						<h2>iPads</h2>
@@ -96,7 +102,9 @@
 					</div>
 				</div>
 			</div>
-			<div class = "tabContent" id = "ipod">
+			
+			<!-- iPod tab -->
+			<div id = "ipod">
 				<div class = "row">
 					<div class = "col-md-8">
 						<h2>iPods</h2>
@@ -111,7 +119,9 @@
 					</div>
 				</div>
 			</div>
-			<div class = "tabContent" id = "other">
+			
+			<!-- Other tab -->
+			<div id = "other">
 				<div class = "row">
 					<div class = "col-md-8">
 						<h2>Samsung</h2>
@@ -135,7 +145,10 @@
 	<!-- THIS IS THE FOOTER! -->
 	<footer class = "footer">
 		<div class = "container">
-			<center><p class = "text-muted">JTS Technology Services &copy; 2014-2015. All rights reserved. Powered by <a href = "http://www.getbootstrap.com/">Bootstrap</a>. </p></center>
+			<center><p class = "text-muted">
+			    JTS Technology Services &copy; 2014-2015. All rights reserved. 
+			    Powered by <a href = "http://www.getbootstrap.com/">Bootstrap</a>. 
+			</p></center>
 		</div>
 	</footer>
 </body>

@@ -10,8 +10,9 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
 	<!-- Include all compiled plugins (below), or include individual files as needed. -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
 	<script src = "js/bootstrap.js"></script>
 
 	<!-- These are all the external stylesheets used. -->
@@ -24,6 +25,7 @@
 	<div class = "container">
 		<nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation">
 			<div class = "container-fluid">
+			
 			<!-- Brand and toggle get grouped together for better mobile display. -->
 			<div class = "navbar-header">
 				<button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar">
@@ -34,6 +36,7 @@
 				</button>
 				<a class = "navbar-brand" href = "index.html">JTS Technology Services</a>
 			</div>
+			
 			<!-- Collect the nav links, forms, and other content for toggling. -->
 			<div id = "navbar" class = "navbar-collapse collapse">
 				<ul class = "nav navbar-nav navbar-right">
@@ -41,8 +44,6 @@
 					<li><a href = "about.html">About</a></li>
 					<li><a href = "contact.html">Contact</a></li>
 					<li><a href = "services.html">Services</a></li>
-					<li><a href = "shop.html">Shop</a></li>
-					<li><a href = "news.html">News</a></li>
 				</ul>
 			</div>
 			</div>
@@ -57,70 +58,61 @@
 			<li data-target = "#m_carousel" data-slide-to = "0" class = "active"></li>
 			<li data-target = "#m_carousel" data-slide-to = "1"></li>
 			<li data-target = "#m_carousel" data-slide-to = "2"></li>
-			<li data-target = "#m_carousel" data-slide-to = "3"></li>
 		</ol>
 		<div class = "carousel-inner" role = "listbox">
 
-			<!-- This is the 1st slide! -->
+			<!-- This is the 1st slide - About -->
 			<div class = "item active">
 
 			<!-- Image 1 is within this div. See index.css for details. ( .carousel-inner > .item > img )
-           Also: https://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly -->
+                 Also: https://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly -->
 			<img src = "img/temp_img.png" alt = "first slide">
+			
+			    <div class = "container">
+			        <div class = "carousel-caption">
+				        <h1>JTS Technology Services</h1>
+				        <p>Electronic device repair</p>
+				        <p>iPhones • iPads • iPods • Samsung • Android • Laptops</p>
+				        <p><a class = "btn btn-lg btn-primary" href = "about.html" role = "button">About JTS</a></p>
+			        </div>
+			    </div>
+			</div>
 
-			<div class = "container">
-			<div class = "carousel-caption">
-				<h1>JTS Technology Services</h1>
-				<p>Electronic device repair</p>
-				<p>iPhones • iPads • iPods • Samsung • Android • Laptops </p>
-        <p>Certified iCracked iTech partner JT (John) has all his repairs backed by iCracked's 99-Year Nationwide Warranty. </p>
-				<p><a class = "btn btn-lg btn-primary" href = "contact.html" role = "button">Let's get started!</a></p>
-			</div>
-			</div>
-			</div>
-
-			<!-- This is the 2nd slide! -->
+			<!-- This is the 2nd slide - Contact -->
 			<div class = "item">
 
-				<!-- Image 2 is within this div. See index.css for details. -->
-				<img src = "img/temp_img.png" alt = "second slide">
+			<!-- Image 2 is within this div. See index.css for details. ( .carousel-inner > .item > img )
+                 Also: https://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly -->
+			<img src = "img/temp_img.png" alt = "second slide">
+			
+			    <div class = "container">
+			        <div class = "carousel-caption">
+				        <h1>Contact JTS Technology Services</h1>
+				        <p>Click the button below to contact JT for a repair, estimate or any questions!</p>
+				        <p><a class = "btn btn-lg btn-primary" href = "contact.html" role = "button">Contact JT</a></p>
+			        </div>
+			    </div>
+			</div>
 
-			<div class = "container">
-			<div class = "carousel-caption">
-				<h1>We're on the news! </h1>
-				<p>iCracked has appeared on various news networks, such as Yahoo!, Reuters, CNN and more! </p>
-				<p><a class = "btn btn-lg btn-primary" href = "news.html">News</a></p>
-			</div>
-			</div>
-			</div>
-
-			<!-- This is the 3rd slide! -->
+			<!-- This is the 3rd slide - Services-->
 			<div class = "item">
 
-			<!-- Image 3 is within this div. See index.css for details. -->
+			<!-- Image 3 is within this div. See index.css for details. ( .carousel-inner > .item > img )
+                 Also: https://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly -->
 			<img src = "img/temp_img.png" alt = "third slide">
+			
+			    <div class = "container">
+			        <div class = "carousel-caption">
+				        <h1>Find out what services JT offers!</h1>
+				        <p>Click the button below to find out more about what services JTS Tech Services offers!</p>
+				        <p><a class = "btn btn-lg btn-primary" href = "services.html" role = "button">Services</a></p>
+			        </div>
+			    </div>
+			</div>
 
-			<div class = "container">
-			<div class = "carousel-caption">
-				<h1>Got a device you want to sell? </h1>
-				<p>JTS Technology Services can help with that! With our new online form, selling your device will be quick and easy! </p>
-				<p><a class = "btn btn-lg btn-primary" href = "contact.html">Start now!</a></p>
-			</div>
-			</div>
-			</div>
-
-			<!-- This is the 4th slide! -->
-			<div class = "item">
-			<img src = "img/temp_img.png" alt = "fourth slide">
-			<div class = "container">
-			<div class = "carousel-caption">
-				<h1>Want an iDevice? </h1>
-				<p>With our brand new online shop, shopping is simple! ( ** UNDER CONSTRUCTION ** ) </p>
-				<p><a class = "btn btn-lg btn-primary" href = "shop.html">Let's go!</a></p>
-			</div>
-			</div>
-			</div>
-		</div> <!-- End of <LISTBOX> -->
+            <!-- End of slides -->
+            <!-- Add more slides by adding more "items". -->
+		</div>
 
 		<!-- These are the <CAROUSEL CONTROLS>! -->
 		<a class = "left carousel-control" href = "#m_carousel" role = "button" data-slide = "prev">
@@ -165,47 +157,12 @@
 
 	</div> <!-- End of <EXTRA_INFO> blubs! -->
 
-	<!-- THIS SHOULD BE REMOVED - WHY ELSE DO WE HAVE AN ABOUT PAGE? -->
-	<!--<hr class = "featurette-divider">-->
-  <!-- This is the <ABOUT> section! -->
-  <!--
-	<div class = "row" id = "about">
-		<div class = "col-md-4">
-			<div class = "col-md-12"><center><h2>John (JT) Shepple</h2></center></div>
-			<div class = "col-md-12"><center><h4>Chief Technology Officer (CTO) of JTS Technology Services</h4></center></div>
-			<div class = "col-md-12">
-				<p style = "text-align: justify"><strong>John (JT) Shepple</strong> is an undergraduate student at University of Massachusetts, Lowell,
-				studying Computer Science with a minor in Business Administration. You may contact him at: <strong>(978) 875-2151</strong> or
-				<a href = "mailto:jtsheppleitech@gmail.com">JTSheppleiTech@gmail.com</a>. </p>
-			</div>
-		</div>
-		<div class = "col-md-4">
-			<div class = "col-md-12"><center><h2>Jason Downing</h2></center></div>
-			<div class = "col-md-12"><center><h4>Expert GitHubber for JTS Technology Services</h4></center></div>
-			<div class = "col-md-12">
-				<p style = "text-align: justify"><strong>Jason Downing</strong> is an undergraduate student at University of Massachusetts, Lowel.
-				You may contact him at: <a href = "mailto:jason_downing@student.uml.edu">jason_downing@student.uml.edu</a>. </p>
-			</div>
-		</div>
-		<div class = "col-md-4">
-			<div class = "col-md-12"><center><h2>Emily Seto</h2></center></div>
-			<div class = "col-md-12"><center><h4>Web Developer for JTS Technology Services</h4></center></div>
-			<div class = "col-md-12">
-				<p style = "text-align: justify"><strong>Emily Seto</strong> is an undergraduate Computer Science student at University of Massachusetts, Lowell.
-				You may contact her at: <a href = "mailto:emily_seto@student.uml.edu">emily_seto@student.uml.edu</a> or <a href = "mailto:svnaptic@gmail.com">svnaptic@gmail.com</a>. </p>
-			</div>
-		</div>
-	</div>-->
-
-	<!-- let's see if JT actually checked the website. -->
-	<audio autoplay>
-    <source src="img/changing-guards.mp3" type="audio/mpeg">
-	</audio>
-
 	<!-- THIS IS THE FOOTER! -->
 	<footer class = "footer">
 		<div class = "container">
-			<center><p class = "text-muted">JTS Technology Services &copy; 2014-2015. All rights reserved. Powered by <a href = "http://www.getbootstrap.com/">Bootstrap</a>. </p></center>
+			<center><p class = "text-muted">
+			JTS Technology Services &copy; 2014-2015. 
+			All rights reserved. Powered by <a href = "http://www.getbootstrap.com/">Bootstrap</a>. 
 		</div>
 	</footer>
 </body>
