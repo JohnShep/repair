@@ -3,12 +3,12 @@ JT's Metro-West Repair &amp; Buyback Service
 
 Source code for JT's awesome website.
 
-JT's awesome website is located at the following address:
+JT's website is (until a domain name is purchased):
 
-http://JohnShep.github.io/repair/index.html
+http://JohnShep.github.io/repair
 
-Dev site(s):
+Dev sites:
 
-http://jasond94.github.io/repair/index.html
+http://jasond94.github.io/repair
 
-http://svnaptic.github.io/repair/index.html
+http://svnaptic.github.io/repair
