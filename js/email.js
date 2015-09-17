@@ -24,27 +24,27 @@ function post_data() {
   console.log(email_message);
 
   var the_message;
-  the_message = "Email from " + email_message["name"] + "<br/>Phone number: " + email_message["phone_number"]
+  the_message = "Email from some idiot customer named " + email_message["name"] + "<br/>Phone number: " + email_message["phone_number"]
   + "<br/>Customer's device: " + email_message["option"] + "<br/>If other: " + email_message["other_device"]
   + "<br/>Customer's location: " + email_message["location"] + "<br/>Customer's message is as follows: <br/>" +
-  email_message["message"] + "<br/><br/>SENT VIA JT'S AWESOME WEBSITE";
+  email_message["message"] + "<br/><br/>SENT VIA JT'S AWESOME WEBSITE THAT JASON AND EMILY MADE FOR FREE BECAUSE JT SHEPPLE IS A CHEAP ASS.";
 
   $.ajax({
     type: 'POST',
     url: 'https://mandrillapp.com/api/1.0/messages/send.json',
     data: {
-      "key": "qoDjPi3vtF0p8F01At5muw",
+      "key": "PUZvXW1BZFD6SZHSBpVH7Q",
       "message": {
-        "from_email": email_message["email"], //email_message["email"]
+        "from_email": email_message["email"],
         "to": [
         {
-          "email": "jdown1994@gmail.com", // jtsheppleitech@gmail.com
-          "name": "JT Shepple",                // jdown1994@gmail.com
+          "email": "jtsheppleitech@gmail.com",
+          "name": "JT Shepple",
           "type": "to"
         }
         ],
         "autotext": "true",
-        "subject": "You have a new email from a customer!",
+        "subject": "CHECK YOUR EMAIL JT ITS A CUSTOMER GOD DAMN IT",
         "html": the_message
       }
     }
@@ -56,7 +56,7 @@ function post_data() {
       console.log("Success in sending the email.");
       document.email_form.reset();
 
-      $("#after_submit").html("Thanks for emailing JT!<br/>JT will get back to you as soon as possible.");
+      $("#after_submit").html("Thanks for emailing JT!<br/>JT will get back to you as soon as possible. Probably, Probably not. JT can be moody.");
 
       $( "#dialog" ).dialog({modal:true});
     }
