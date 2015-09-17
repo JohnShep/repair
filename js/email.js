@@ -38,7 +38,7 @@ function post_data() {
         "from_email": email_message["email"], //email_message["email"]
         "to": [
         {
-          "email": "jtsheppleitech@gmail.com", // jtsheppleitech@gmail.com
+          "email": "jdown1994@gmail.com", // jtsheppleitech@gmail.com
           "name": "JT Shepple",                // jdown1994@gmail.com
           "type": "to"
         }
