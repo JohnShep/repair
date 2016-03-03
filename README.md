@@ -9,6 +9,5 @@ http://JohnShep.github.io/repair
 
 Dev sites:
 
-http://jasond94.github.io/repair
-
-http://svnaptic.github.io/repair
+http://jasond94.github.io/repair/index.html
+http://svnaptic.github.io/repair/index.html
