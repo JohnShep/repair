@@ -1,0 +1,51 @@
+/* GENERAL EXTERNAL STYLESHEET */
+.featurette-divider {
+	margin: 50px 0;
+}
+
+/* FOR STICKY FOOTER: */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 20px;
+}
+
+.navbar-wrapper {
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+.footer {
+	position: static;
+	background-color: #FFFFFF;
+	bottom: 0;
+	height: 15px;
+	padding-top: 30px;
+	width: 100%;
+}
+
+.footer > .container {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+body {
+	padding-top: 70px;
+}
+
+body > .row {
+	margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
